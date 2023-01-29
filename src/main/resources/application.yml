@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://moga-db.cidtckobgf3m.ap-northeast-2.rds.amazonaws.com:3306/moga-db
+    username: root
+    password: cksdl30104
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: ture
+logging:
+  level:
+    org.hibernate.SQL: debug
+
